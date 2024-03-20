@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-export default nextConfig;
+
+// next.config.mjs
+export default {
+    images: {
+      domains: ['uwqxdggywnhhnxafhqfu.supabase.co'], // Ajoutez le domaine de votre image ici
+    },
+  };
+  

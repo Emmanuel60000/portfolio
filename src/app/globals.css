@@ -2,32 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+}
+.body_color{
+  background-color: #ECE7E1;
+}
+.my-svg {
+  width: 30px; 
+  height: 30px; 
+}
+.social{
+  width: 30px; 
+  height: 30px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.skills > div {
+  margin-top: 1rem; /* Vous pouvez ajuster la valeur de la marge supérieure ici */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.skills img {
+  width: 6rem; /* Taille de l'image */
+  height: 6rem; /* Taille de l'image */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.skills p {
+  margin-top: 0.5rem; /* Marge supérieure pour les paragraphes */
+  margin-bottom: 0; /* Supprimer la marge inférieure par défaut */
 }
+
+
+
+
+
+
